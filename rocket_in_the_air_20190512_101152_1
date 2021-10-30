@@ -1,0 +1,22 @@
+./darknet detector test QData/Q-obj.data  cfg/Q-yolo.cfg QData/backup/Q-yolo_final.weights  QData3/20190512_101152_1.jpg  -thresh .1 | more
+
+mask_scale: Using default '1.000000'
+Loading weights from QData/backup/Q-yolo_final.weights...Done!
+QData3/20190512_101152_1.jpg: Predicted in 0.413773 seconds.
+rocket: 22%
+rocket: 11%
+
+./darknet detector test QData3/Q-obj.data  cfg/Q-yolo.cfg QData3/backup/Q-yolo_final.weights  QData3/20190512_101152_1.jpg  -thresh .1 | more
+
+mask_scale: Using default '1.000000'
+Loading weights from QData3/backup/Q-yolo_final.weights...Done!
+QData3/20190512_101152_1.jpg: Predicted in 0.382011 seconds.
+rocket: 84%
+
+./darknet detector test QData5/Q-obj.data  cfg/Q-yolo.cfg QData5/backup/Q-yolo_30000.weights  QData3/20190512_101152_1.jpg  -thresh .1 | more
+
+mask_scale: Using default '1.000000'
+Loading weights from QData5/backup/Q-yolo_30000.weights...Done!
+QData3/20190512_101152_1.jpg: Predicted in 0.402472 seconds.
+rocket: 32%
+rocket: 23%
